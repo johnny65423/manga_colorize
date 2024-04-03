@@ -1,0 +1,5 @@
+fastai==2.4.0
+opencv-contrib-python
+scikit-image
+easyocr
+windnd

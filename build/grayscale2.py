@@ -336,7 +336,7 @@ net_G.load_state_dict(torch.load(rootpath + r"\res34-unet_forBlack.pt", map_loca
 model = MainModel(net_G=net_G)
 #model = model.to(device)
 
-model.load_state_dict(torch.load(rootpath + r"\OnePiece0905_temp100.pth"))
+model.load_state_dict(torch.load(rootpath + r"\OnePiece0905_temp100.pth", map_location=device))
 #model.load_state_dict(torch.load(rootpath + r"\OnePiece0905_temp100.pth"))
 
 

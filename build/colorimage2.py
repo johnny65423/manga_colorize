@@ -331,7 +331,7 @@ net_G.load_state_dict(torch.load(rootpath + r"\res34-unet.pt", map_location=devi
 model2 = MainModel(net_G=net_G)
 model2 = model2.to(device)
 
-model2.load_state_dict(torch.load(rootpath + r"\OnePiece0827_temp180.pth"))
+model2.load_state_dict(torch.load(rootpath + r"\OnePiece0827_temp180.pth", map_location=device))
 
 
 def graytocolor(image):
